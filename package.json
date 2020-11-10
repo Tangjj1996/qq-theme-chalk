@@ -1,17 +1,22 @@
 {
-  "name": "qq-theme-chalk",
-  "version": "0.0.1",
-  "description": "",
+  "name": "qq-theme-framework",
+  "version": "0.0.2",
+  "description": "icon & theme framework",
   "main": "lib/index.js",
   "scripts": {
     "build": "node webpack/prod.config",
-    "dev": "node webpack/dev.config"
+    "dev": "node webpack/dev.config",
+    "lint": "eslint . --fix && prettier . --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tangjj1996/qq-theme-chalk.git"
   },
-  "keywords": [],
+  "keywords": [
+    "theme",
+    "icon",
+    "framework"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
