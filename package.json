@@ -4,7 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node webpack/prod.config",
+    "dev": "node webpack/dev.config"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@webpack-contrib/eslint-config-webpack": "^3.0.0",
+    "clean-webpack-plugin": "^3.0.0",
     "commitlint": "^11.0.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
@@ -31,5 +33,8 @@
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2",
     "webpack": "^5.4.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.12"
   }
 }
