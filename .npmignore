@@ -1,0 +1,19 @@
+# directory
+webpack/
+node_modules/
+
+# dot file & IDE config
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierignore
+.prettier
+.idea
+
+# lint tool config
+babel.config.js
+commitlint.config.js
+husky.config.js
+lint-staged.config.js
+package-lock.json
