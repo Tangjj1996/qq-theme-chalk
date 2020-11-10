@@ -13,6 +13,9 @@ const compiler = webpack({
     path: path.resolve(process.cwd(), 'lib'),
     filename: 'index.js',
   },
+  resolve: {
+    extensions: ['index.vue', 'index.js', 'js'],
+  },
   module: {
     rules: [],
   },

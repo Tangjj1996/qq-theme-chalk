@@ -1,6 +1,6 @@
 {
   "name": "qq-theme-framework",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "icon & theme framework",
   "main": "lib/index.js",
   "scripts": {
@@ -34,10 +34,13 @@
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.1.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
     "prettier": "^2.1.2",
-    "webpack": "^5.4.0"
+    "webpack": "^5.4.0",
+    "webpack-dev-middleware": "^4.0.2",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "dependencies": {
     "vue": "^2.6.12"
