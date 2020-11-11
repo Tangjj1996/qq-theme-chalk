@@ -1,6 +1,6 @@
 {
   "name": "qq-theme-framework",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "icon & theme framework",
   "main": "lib/index.js",
   "scripts": {
@@ -50,13 +50,12 @@
     "prettier": "^2.1.2",
     "style-loader": "^2.0.0",
     "svg-inline-loader": "^0.8.2",
+    "vue": "^2.6.12",
     "vue-loader": "^15.9.5",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^5.4.0",
     "webpack-dev-middleware": "^4.0.2",
     "webpack-hot-middleware": "^2.25.0"
   },
-  "dependencies": {
-    "vue": "^2.6.12"
-  }
+  "dependencies": {}
 }

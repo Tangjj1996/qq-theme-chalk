@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import app from './components';
+import app from './app';
 
 if (module.hot) {
   module.hot.accept();

@@ -10,7 +10,7 @@ export default {
   props: {
     icon: {
       type: String,
-      default: 'qq-close',
+      require: true
     },
   },
   computed: {
@@ -31,6 +31,7 @@ export default {
 
 <style scoped>
 .svg_default {
+  display: flex;
   width: 16px;
   height: 16px;
   fill: currentColor;
