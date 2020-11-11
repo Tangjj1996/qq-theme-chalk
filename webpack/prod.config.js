@@ -4,6 +4,8 @@ const webpack = require('webpack');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
+const VueLoaderPlugin = require('vue-loader/lib/plugin-webpack5');
+
 const runner = require('./runner');
 
 const compiler = webpack({
@@ -14,12 +16,25 @@ const compiler = webpack({
     filename: 'index.js',
   },
   resolve: {
-    extensions: ['index.vue', 'index.js', 'js'],
+    alias: {
+      '@src': path.resolve(process.cwd(), 'src'),
+      '@package': path.resolve(process.cwd(), 'package'),
+    },
+    extensions: ['.vue', '.js'],
   },
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.vue/,
+        loader: 'vue-loader',
+      },
+    ],
   },
-  plugins: [new webpack.ProgressPlugin(), new CleanWebpackPlugin()],
+  plugins: [
+    new VueLoaderPlugin(),
+    new webpack.ProgressPlugin(),
+    new CleanWebpackPlugin(),
+  ],
 });
 
 runner(compiler);

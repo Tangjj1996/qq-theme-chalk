@@ -1,6 +1,7 @@
 # directory
 webpack/
 node_modules/
+public/
 
 # dot file & IDE config
 .editorconfig
@@ -10,6 +11,7 @@ node_modules/
 .prettierignore
 .prettier
 .idea
+.npmrc
 
 # lint tool config
 babel.config.js

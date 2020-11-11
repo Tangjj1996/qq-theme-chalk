@@ -1,4 +1,4 @@
-import Icon from './Icon/index.vue';
+import Icon from '@package/Icon';
 
 export default {
   install(vue, options) {
