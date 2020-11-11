@@ -15,7 +15,7 @@ const compiler = webpack({
   },
   output: {
     path: path.resolve(process.cwd(), 'lib'),
-    filename: 'index.js',
+    filename: 'runtime.js',
   },
   resolve: {
     alias: {
@@ -65,7 +65,9 @@ const compiler = webpack({
   plugins: [
     new VueLoaderPlugin(),
     new webpack.ProgressPlugin(),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*', '!index.js'],
+    }),
   ],
 });
 
