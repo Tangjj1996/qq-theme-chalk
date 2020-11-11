@@ -28,6 +28,10 @@ const compiler = webpack({
   module: {
     rules: [
       {
+        test: /\.js$/,
+        loader: 'babel-loader',
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         exclude: /node_modules/,

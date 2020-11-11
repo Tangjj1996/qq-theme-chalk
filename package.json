@@ -1,6 +1,6 @@
 {
   "name": "qq-theme-framework",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "icon & theme framework",
   "main": "lib/index.js",
   "scripts": {
@@ -32,6 +32,8 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@webpack-contrib/eslint-config-webpack": "^3.0.0",
+    "autoprefixer": "^10.0.2",
+    "babel-loader": "^8.2.1",
     "clean-webpack-plugin": "^3.0.0",
     "commitlint": "^11.0.0",
     "css-loader": "^5.0.1",
@@ -43,6 +45,7 @@
     "html-webpack-plugin": "^4.5.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
+    "postcss": "^8.1.7",
     "postcss-loader": "^4.0.4",
     "prettier": "^2.1.2",
     "style-loader": "^2.0.0",

@@ -1,10 +1,9 @@
 import qqComponent from '@package/components';
 
 const install = function (Vue) {
-  Vue.use(qqComponent);
+  Vue.component(qqComponent.name, qqComponent);
 };
 
 export default {
   install,
-  test: 'this is a test',
 };
