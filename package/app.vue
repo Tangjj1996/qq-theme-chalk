@@ -1,6 +1,6 @@
 <template>
   <div>
-    <icon-com icon="qq-close" />
+    <icon-com icon="qq-close" class="card" />
   </div>
 </template>
 
@@ -14,6 +14,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang='scss'>
+.card {
+  width: 100px;
+  height: 100px;
+}
 </style>

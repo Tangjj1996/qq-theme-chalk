@@ -69,6 +69,25 @@ const complier = webpack({
         ],
         exclude: /node_modules/,
       },
+      {
+        test: /\.s(a|c)ss$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2,
+              esModule: true,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+          },
+        ],
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [

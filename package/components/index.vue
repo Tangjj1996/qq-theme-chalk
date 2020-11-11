@@ -31,7 +31,6 @@ export default {
 
 <style scoped>
 .svg_default {
-  display: flex;
   width: 16px;
   height: 16px;
   fill: currentColor;
