@@ -16,6 +16,7 @@ const compiler = webpack({
   output: {
     path: path.resolve(process.cwd(), 'lib'),
     filename: 'runtime.js',
+    libraryTarget: 'commonjs2',
   },
   resolve: {
     alias: {
