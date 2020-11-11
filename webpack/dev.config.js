@@ -67,7 +67,6 @@ const complier = webpack({
             loader: 'postcss-loader',
           },
         ],
-        exclude: /node_modules/,
       },
       {
         test: /\.s(a|c)ss$/,
