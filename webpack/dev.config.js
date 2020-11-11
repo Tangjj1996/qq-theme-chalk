@@ -96,7 +96,8 @@ const complier = webpack({
     new HtmlWebpackPlugin({
       template: path.resolve(process.cwd(), 'public/index.html'),
       filename: 'index.html',
-      title: 'qq-theme-framework-app',
+      title: '轻轻--轻量丰富的svg图标库',
+      favicon: path.resolve(process.cwd(), 'public/favicon.ico'),
     }),
     new VueLoaderPlugin(),
   ],
