@@ -1,11 +1,11 @@
 import Vue from 'vue';
 
-import Icon from './Icon';
+import app from './components';
 
 if (module.hot) {
   module.hot.accept();
 }
 
 new Vue({
-  render: (h) => h(Icon),
+  render: (h) => h(app),
 }).$mount('#qq-theme-framework-app');

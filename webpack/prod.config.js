@@ -10,7 +10,9 @@ const runner = require('./runner');
 
 const compiler = webpack({
   mode: 'production',
-  entry: path.resolve(process.cwd(), 'src/index.js'),
+  entry: {
+    index: path.resolve(process.cwd(), 'src/index.js'),
+  },
   output: {
     path: path.resolve(process.cwd(), 'lib'),
     filename: 'index.js',

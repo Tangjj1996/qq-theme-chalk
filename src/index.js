@@ -1,8 +1,7 @@
-import Icon from '@package/Icon';
+import qqComponent from '@package/components';
 
 export default {
-  install(vue, options) {
-    console.log(options, '-----------');
-    vue.commponent(Icon.name, Icon);
+  install(vue) {
+    vue.component(qqComponent.name, qqComponent);
   },
 };
