@@ -2,6 +2,7 @@
 webpack/
 node_modules/
 public/
+asset/
 
 # dot file & IDE config
 .editorconfig

@@ -11,5 +11,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'no-now': 0,
     'import/extensions': 0,
+    'vue/no-v-html': 0,
+    'vue/max-attributes-per-line': 0,
   },
 };

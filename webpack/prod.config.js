@@ -17,6 +17,7 @@ const compiler = webpack({
   },
   resolve: {
     alias: {
+      '@asset': path.resolve(process.cwd(), 'asset'),
       '@src': path.resolve(process.cwd(), 'src'),
       '@package': path.resolve(process.cwd(), 'package'),
     },
@@ -25,8 +26,33 @@ const compiler = webpack({
   module: {
     rules: [
       {
-        test: /\.vue/,
+        test: /\.vue$/,
         loader: 'vue-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.svg$/,
+        loader: 'svg-inline-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              esModule: true,
+            },
+          },
+          {
+            loader: 'postcss-loader',
+          },
+        ],
+        exclude: /node_modules/,
       },
     ],
   },

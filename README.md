@@ -1,4 +1,5 @@
 # qq-theme-framework
-> 轻量便捷的svg图标库
+
+> 轻量便捷的 svg 图标库
 
 ## Usage
