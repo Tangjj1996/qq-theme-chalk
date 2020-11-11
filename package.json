@@ -1,6 +1,6 @@
 {
   "name": "qq-theme-framework",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "icon & theme framework",
   "main": "lib/index.js",
   "scripts": {

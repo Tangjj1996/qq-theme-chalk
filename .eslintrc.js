@@ -14,5 +14,6 @@ module.exports = {
     'vue/no-v-html': 0,
     'vue/max-attributes-per-line': 0,
     'vue/require-default-prop': 0,
+    'func-names': 0,
   },
 };

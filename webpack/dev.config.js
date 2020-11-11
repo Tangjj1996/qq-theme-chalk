@@ -10,7 +10,7 @@ const hotMiddleware = require('webpack-hot-middleware');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const VueLoaderPlugin = require('vue-loader/lib/plugin-webpack5');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const app = express();
 
