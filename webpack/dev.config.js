@@ -84,6 +84,9 @@ const complier = webpack({
           {
             loader: 'postcss-loader',
           },
+          {
+            loader: 'sass-loader',
+          },
         ],
         exclude: /node_modules/,
       },
